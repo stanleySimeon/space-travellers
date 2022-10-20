@@ -10,10 +10,11 @@
 - JS
 - React JS
 - Redux
+- Tailwind CSS
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://roaring-jelly-585f87.netlify.app/)
+[Live Demo Link]()
 
 
 
