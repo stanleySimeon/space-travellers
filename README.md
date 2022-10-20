@@ -36,13 +36,7 @@ To get a local copy up and running follow these simple example steps.
 - run `npm run build` to build the  project
 
 
-## Authors
-
-👤 **Yousef Hesham**
-
-- GitHub: [@yosefHesham](https://github.com/yosefHesham)
-- Twitter: [@yousef](https://twitter.com/Yousef45653478)
-- LinkedIn: [@LinkedIn](https://www.linkedin.com/in/yousef-hesham98/)
+## Author
 
 👤 **Stanley SIMEON**
 
