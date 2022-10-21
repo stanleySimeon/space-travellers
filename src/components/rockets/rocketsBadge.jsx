@@ -12,11 +12,11 @@ function RocketBadge(props) {
   };
 
   return reserved ? (
-    <button className="py-1 md:py-2 md:px-4 px-2 mt-2 md:mt-4 rounded-sm text-md md:text-xl text-grayDark font-normal md:rounded-md text-center bg-transparent border" type="button" onClick={handleReserve} id={id}>
+    <button className="py-1 md:py-2 px-2 md:px-4 lg:px-6 mt-2 md:mt-4 rounded-sm text-md md:text-xl text-grayDark font-normal md:rounded-md text-center bg-transparent border" type="button" onClick={handleReserve} id={id}>
       Cancel Reservation
     </button>
   ) : (
-    <button className="py-1 md:py-2 md:px-4 px-2 rounded-sm text-md md:text-xl text-white font-normal md:rounded-md text-center bg-blue" type="button" onClick={handleReserve} id={id}>
+    <button className="py-1 md:py-2 px-2 md:px-4 lg:px-6 rounded-sm text-md md:text-xl text-white font-normal md:rounded-md text-center bg-blue" type="button" onClick={handleReserve} id={id}>
       Reserve Rocket
     </button>
   );

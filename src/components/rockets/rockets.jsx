@@ -21,7 +21,7 @@ function Rockets() {
     <>
       <div className="container-fluid w-full h-screen bg-cover bg-center" style={{ backgroundImage: `url(${background})` }}>
         <div className="flex flex-col justify-center items-center h-full">
-          <h1 className="text-4xl md:text-9xl font-bold text-white text-center -mt-12 md:-mt-0 uppercase">
+          <h1 className="text-4xl md:text-7xl lg:text-9xl font-bold text-white text-center uppercase">
             Space
             {' '}
             <br />
@@ -34,8 +34,8 @@ function Rockets() {
           </button>
         </div>
       </div>
-      <section ref={ref} className="md:px-24 px-2 md:pt-24 pt-16">
-        <ul style={{ width: '100%', padding: '0' }}>
+      <section ref={ref} className="px-2 md:px-16 lg:px-32 pt-16 md:pt-24">
+        <ul className="w-full">
           {rockets.map((rocket) => (
             <GetRockets
               key={rocket.id}

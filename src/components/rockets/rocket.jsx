@@ -13,12 +13,12 @@ const GetRockets = ({
   <li
     className="card m-auto shadow-md rounded-md p-2 md:mt-10 md:flex gap-5 mb-6"
   >
-    <img alt={name} src={images} className="w-full md:w-3/12" />
+    <img alt={name} src={images} className="w-full md:w-4/12 lg:w-5/12" />
     <div>
-      <h2 className="font-bold md:text-2xl md:mb-2 my-2 text-xl">{name}</h2>
+      <h2 className="font-bold text-md md:text-xl lg:text-2xl md:mb-2 my-2">{name}</h2>
       <div className="p-0 text-sm md:text-xl">
         {reserved ? (
-          <div style={{ margin: '0', padding: '0', lineHeight: '25px' }}>
+          <div className="m-0 p-0 text-md">
             <p>
               <span
                 style={badgeStyle}
@@ -27,12 +27,12 @@ const GetRockets = ({
                 reserved
               </span>
               {' '}
-              <span className="text-grayDark md:text-xl text-sm mb-4">{description}</span>
+              <span className="text-grayDark text-sm md:text-xl mb-4">{description}</span>
               {' '}
             </p>
           </div>
         ) : (
-          <p className="text-grayDark md:text-xl text-sm mb-4">{description}</p>
+          <p className="text-grayDark text-sm md:text-xl mb-4">{description}</p>
         )}
       </div>
       <RocketBadge id={id} reserved={reserved} />
