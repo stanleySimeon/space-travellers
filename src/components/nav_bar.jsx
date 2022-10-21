@@ -23,12 +23,12 @@ export default function Navbar() {
   };
 
   return (
-    <header className="header flex w-full justify-between items-center p-3 md:py-4 md:px-24 bg-black fixed top-0 z-10">
+    <header className="header flex w-full justify-between items-center p-3 md:py-4 md:px-16 lg:px-32 bg-black fixed top-0 z-10">
       <div className="md:flex md:items-center md:gap-8">
-        <img src={planet} alt="logo" className="w-6 h-6 md:h-14 md:w-14" />
-        <h1 className="hidden md:inline md:text-3xl text-white">Space Travelers&apos; Hub</h1>
+        <img src={planet} alt="logo" className="w-6 h-6 md:h-8 md:w-8 lg:h-14 lg:w-14" />
+        <h1 className="hidden lg:inline text-white">Space Travelers&apos; Hub</h1>
       </div>
-      <ul className="hidden absolute w-full md:w-auto top-12 md:top-0 left-0 h-44 md:h-auto bg-black md:relative mobile-menu md:flex md:gap-24 text-white font-light md:font-normal">
+      <ul className="hidden absolute w-full md:w-auto top-12 md:top-0 left-0 h-screen bg-opacity-95 md:h-auto bg-black md:relative mobile-menu md:flex md:gap-12 lg:gap-14 text-white font-light md:font-normal">
         {navLinks.map((link) => (
           <li
             key={link.id}

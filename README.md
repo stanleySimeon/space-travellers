@@ -14,7 +14,7 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link]()
+[Live Demo Link](https://spacextravellers.netlify.app/)
 
 
 
@@ -26,7 +26,7 @@ To get a local copy up and running follow these simple example steps.
 - any code editor, preferly vs code.
 
 ### Setup
-- clone the project `https://github.com/yosefHesham/space-travellers`
+- clone the project `https://github.com/stanleySimeon/space-travellers`
 
 ### Install
 - run npm i to install dependencies
