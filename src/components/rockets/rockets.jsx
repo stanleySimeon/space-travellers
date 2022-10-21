@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { getRockets } from '../../redux/rockets/rockets';
-import background from '../../assets/for_press_release.jpeg';
+import background from '../../assets/for_press_release.png';
 import arrowDown from '../../assets/iconmonstr-arrow-down-circle-lined.svg';
 import GetRockets from './rocket';
 
