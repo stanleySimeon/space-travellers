@@ -13,12 +13,11 @@ const Missions = () => {
   }, []);
   let i = 0;
   return (
-    <section className={styles.missions}>
+    <section className="w-full my-32 px-2 md:px-16 lg:px-32">
       <div className={styles.mission}>
         <p className={styles.right_border}>Mission</p>
         <p className={styles.right_border}>Description</p>
-        <p className={styles.right_border}>Status</p>
-        <p> </p>
+        <span className="flex border-box h-full items-center justify-center">Status</span>
       </div>
 
       {missions.map((mission) => {
