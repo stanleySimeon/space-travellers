@@ -10,7 +10,7 @@ const Mission = (props) => {
   } = props;
 
   return (
-    <div className={styles.mission} style={{ backgroundColor: bgColor }}>
+    <div className={`text-xs ${styles.mission}`} style={{ backgroundColor: bgColor }}>
       <p className={styles.right_border}>{name}</p>
       <p className={styles.right_border}>
         {' '}
@@ -19,19 +19,19 @@ const Mission = (props) => {
       {reserved ? (
         <>
           {' '}
-          <StatusBadge text="Active Member" bgColor="blue" />
+          <StatusBadge text="Active Member" className="bg-blue text-white" />
           {' '}
           <ChangeStatus
             text="Leave Mission"
-            color="red"
             id={id}
+            className="text-red"
           />
           {' '}
         </>
       ) : (
         <>
           {' '}
-          <StatusBadge text="NOT A MEMBER" bgColor="gray" />
+          <StatusBadge text="Not a Member" />
           {' '}
           <ChangeStatus
             text="Join Mission"

@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux';
 import { changeMissionStats } from '../../redux/missions/missions';
 
 const ChangeStatus = (props) => {
-  const { id, text, color } = props;
+  const { id, text } = props;
   const dispatch = useDispatch();
   const handleChange = () => {
     dispatch(changeMissionStats(id));
@@ -12,24 +12,12 @@ const ChangeStatus = (props) => {
 
   return (
     <div
-      style={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-      }}
+      className="flex px-8 md:px-2 justify-center items-center text-xs md:text-md lg:text-xl border-r"
     >
       <button
         type="button"
         onClick={handleChange}
-        style={{
-          boxShadow: 'none',
-          color,
-          backgroundColor: 'white',
-          border: `1px solid ${color}`,
-          cursor: 'pointer',
-          padding: '8px',
-          borderRadius: '5px',
-        }}
+        className="border bg-white shadow-none cursor-pointer p-1 md:p-2 rounded-sm"
       >
         {text}
       </button>
@@ -38,7 +26,6 @@ const ChangeStatus = (props) => {
 };
 
 ChangeStatus.propTypes = {
-  color: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
 };

@@ -1,21 +1,14 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import styles from './mission.module.css';
 
 const StatusBadge = (props) => {
-  const { text, bgColor } = props;
+  const { text } = props;
   return (
     <div
-      className={styles.right_border}
-      style={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-      }}
+      className="flex p-8 md:px-2 justify-center items-center text-xs md:text-md lg:text-xl border-r"
     >
-      <p style={{
-        backgroundColor: bgColor, borderRadius: '6px', color: 'white', padding: '4px',
-      }}
+      <p
+        className="p-1 md:p-2 lg:p-3 rounded-sm text-white bg-gray"
       >
         {text}
       </p>
@@ -24,7 +17,6 @@ const StatusBadge = (props) => {
 };
 
 StatusBadge.propTypes = {
-  bgColor: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
 };
 export default StatusBadge;
