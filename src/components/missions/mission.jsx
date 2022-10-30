@@ -18,27 +18,13 @@ const Mission = (props) => {
       </p>
       {reserved ? (
         <>
-          {' '}
-          <StatusBadge text="Active Member" className="bg-blue text-white" />
-          {' '}
-          <ChangeStatus
-            text="Leave Mission"
-            id={id}
-            className="text-red"
-          />
-          {' '}
+          <StatusBadge text="Active Member" />
+          <ChangeStatus text="Leave Mission" id={id} />
         </>
       ) : (
         <>
-          {' '}
           <StatusBadge text="Not a Member" />
-          {' '}
-          <ChangeStatus
-            text="Join Mission"
-            color="rgba(0,0,0,.7)"
-            id={id}
-          />
-          {' '}
+          <ChangeStatus text="Join Mission" id={id} />
         </>
       )}
     </div>

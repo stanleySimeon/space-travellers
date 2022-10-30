@@ -1,13 +1,13 @@
 // Actions
 import getMissions from '../../services/missions_service';
 
-const LOAD_MISSONS = 'LOAD_MISSIONS';
+const LOAD_MISSIONS = 'LOAD_MISSIONS';
 const CHANGE_MISSION_STATUS = 'CHANGE_MISSION_STATUS';
 
 // action creators
 
 export const loadMissions = (missions) => ({
-  type: LOAD_MISSONS,
+  type: LOAD_MISSIONS,
   missions,
 });
 
@@ -30,7 +30,7 @@ export const loadMissionsAsync = async (dispatch, getState) => {
 
 export default function missionsReducer(state = [], action) {
   switch (action.type) {
-    case LOAD_MISSONS:
+    case LOAD_MISSIONS:
       return action.missions;
     case CHANGE_MISSION_STATUS:
       return state.map((mission) => {

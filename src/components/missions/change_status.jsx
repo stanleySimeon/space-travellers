@@ -12,14 +12,24 @@ const ChangeStatus = (props) => {
 
   return (
     <div
-      className="flex px-8 md:px-2 justify-center items-center text-xs md:text-md lg:text-xl border-r"
+      className="flex px-8 md:px-2 justify-center items-center text-xs md:text-md lg:text-xl"
     >
       <button
         type="button"
         onClick={handleChange}
-        className="border bg-white shadow-none cursor-pointer p-1 md:p-2 rounded-sm"
+        className="bg-white text-grayDark px-1 py-1 rounded border text-center"
       >
-        {text}
+        {
+          text === 'Join Mission' ? (
+            <span className="text-center text-blue">
+              {text}
+            </span>
+          ) : (
+            <span className="bg-transparent text-red text-center">
+              {text}
+            </span>
+          )
+        }
       </button>
     </div>
   );

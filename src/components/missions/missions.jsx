@@ -29,7 +29,7 @@ const Missions = () => {
             description={mission.description}
             reserved={mission.reserved}
             id={mission.mission_id}
-            bgColor={(i % 2 ? 'white' : 'lightgrey')}
+            bgColor={(i % 2 ? '' : 'lightgrey')}
           />
         );
       })}
