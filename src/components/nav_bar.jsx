@@ -28,11 +28,11 @@ export default function Navbar() {
         <img src={planet} alt="logo" className="w-6 h-6 md:h-8 md:w-8 lg:h-14 lg:w-14" />
         <h1 className="hidden lg:inline text-white">Space Travelers&apos; Hub</h1>
       </Link>
-      <ul className="hidden absolute w-full md:w-auto top-12 md:top-0 left-0 h-screen bg-opacity-95 md:h-auto bg-black md:relative mobile-menu md:flex md:gap-12 lg:gap-14 text-white font-light md:font-normal">
+      <ul className="hidden mobile-menu absolute w-full md:w-auto  top-12 pt-44 md:top-0 left-0 h-screen bg-opacity-95 md:h-auto bg-black md:relative md:flex md:gap-32 lg:gap-14 text-white font-light md:font-normal">
         {navLinks.map((link) => (
           <li
             key={link.id}
-            className="nav-links md:border-b border-transparent hover:text-grayLight md:hover:border-white text-center mt-4 md:mt-0"
+            className="nav-links md:border-b border-transparent hover:text-grayLight md:hover:border-white text-center mt-12 md:mt-0"
           >
             <NavLink
               to={link.path}
